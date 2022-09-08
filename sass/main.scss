@@ -7,12 +7,37 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
 
 .principal-header {
+    box-shadow: 0 4px 7px -2px rgb(187, 187, 187);
     &__logo {
-        @include title-logo-font;
-        text-align: center;
-        margin: 18px;
+        @include logo-font;
     }
 }
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-dark;
+    padding: 13px 0 13px 0;
+        &__icon {
+            color: $fourth-color;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        &__venue {
+            color: $fourth-color;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+}
+
+
 

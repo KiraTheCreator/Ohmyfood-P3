@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "./utils/variables";
 @import "./utils/mixins";
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.principal-header {
+    &__logo {
+        @include title-logo-font;
+        text-align: center;
+        margin: 18px;
+    }
+}
 

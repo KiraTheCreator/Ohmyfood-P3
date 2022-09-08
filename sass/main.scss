@@ -5,22 +5,25 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
+p, h2, button {
     margin: 0;
 }
 
+p {
+    font-weight: 300;
+}
 
 .principal-header {
-    box-shadow: 0 4px 7px -2px rgb(187, 187, 187);
+    box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
     &__logo {
         @include logo-font;
     }
 }
 
-.localisation {
+.localisation-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +40,22 @@ p {
             font-size: 1.2rem;
             margin-left: 10px;
         }
+}
+
+.site-presentation {
+text-align: center;
+background-color: $background-light;
+padding: 30px 30px 55px 30px;
+    &__title {
+    margin-bottom: 13px;
+    font-weight: 800;
+    }
+    &__description {
+        margin-bottom: 20px;
+    }
+    &__button {
+    @include pink-button-gradiant;
+    }
 }
 
 

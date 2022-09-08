@@ -1,41 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+p, h2, button {
   margin: 0;
 }
 
+p {
+  font-weight: 300;
+}
+
 .principal-header {
-  box-shadow: 0 4px 7px -2px rgb(187, 187, 187);
+  box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
 }
 .principal-header__logo {
   font-family: "Shrikhand", cursive;
   font-size: 2.2rem;
   text-align: center;
-  margin: 18px 18px 3px 18px;
+  margin: 18px 18px 4px 18px;
   padding-bottom: 12px;
 }
 
-.localisation {
+.localisation-header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(235, 235, 235);
   padding: 13px 0 13px 0;
 }
-.localisation__icon {
+.localisation-header__icon {
   color: rgb(73, 73, 73);
   font-size: 1.2rem;
   margin-right: 10px;
 }
-.localisation__venue {
+.localisation-header__venue {
   color: rgb(73, 73, 73);
   font-weight: 600;
   font-size: 1.2rem;
   margin-left: 10px;
+}
+
+.site-presentation {
+  text-align: center;
+  background-color: rgb(248, 243, 243);
+  padding: 30px 30px 55px 30px;
+}
+.site-presentation__title {
+  margin-bottom: 13px;
+  font-weight: 800;
+}
+.site-presentation__description {
+  margin-bottom: 20px;
+}
+.site-presentation__button {
+  background: linear-gradient(to bottom right, #9356DC, #FF79DA);
+  color: white;
+  padding: 16px 25px;
+  border: 0px solid;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
 }
 
 /*# sourceMappingURL=style.css.map */

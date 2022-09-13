@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.principal-shadow, .fonctionnement-homepage__card, .site-presentation__button, .principal-header {
+  box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
+}
+
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
-p, h2, button {
+p, h2, button, h3 {
   margin: 0;
 }
 
@@ -12,9 +16,6 @@ p {
   font-weight: 300;
 }
 
-.principal-header {
-  box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
-}
 .principal-header__logo {
   font-family: "Shrikhand", cursive;
   font-size: 2.2rem;
@@ -44,7 +45,7 @@ p {
 
 .site-presentation {
   text-align: center;
-  background-color: rgb(248, 243, 243);
+  background-color: rgb(251, 248, 248);
   padding: 30px 30px 55px 30px;
 }
 .site-presentation__title {
@@ -61,7 +62,37 @@ p {
   border: 0px solid;
   border-radius: 30px;
   font-weight: 600;
-  box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
+}
+
+.fonctionnement-homepage__title {
+  margin: 20px;
+}
+.fonctionnement-homepage__card {
+  margin: 0 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 84%;
+  height: 75px;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  flex-wrap: nowrap;
+  background-color: rgb(251, 248, 248);
+}
+.fonctionnement-homepage__card__numero {
+  background-color: #9356DC;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  margin-left: -12px;
+}
+.fonctionnement-homepage__card i {
+  color: rgb(152, 152, 152);
+  margin: 0 20px;
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

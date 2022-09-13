@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-p, h2, button {
+p, h2, button, h3 {
     margin: 0;
 }
 
@@ -16,8 +16,9 @@ p {
     font-weight: 300;
 }
 
+
 .principal-header {
-    box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
+    @extend .principal-shadow;
     &__logo {
         @include logo-font;
     }
@@ -57,6 +58,39 @@ padding: 30px 30px 55px 30px;
     @include pink-button-gradiant;
     }
 }
+
+.fonctionnement-homepage {
+    &__title {
+        margin: 20px;
+    }
+    &__card {
+      margin: 0 8%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 84%;
+      height: 75px;
+      border-radius: 25px;
+      @extend .principal-shadow;
+      margin-bottom: 25px;
+      flex-wrap: nowrap;
+      background-color: $background-light; 
+        &__numero {
+            background-color: $primary-color;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            color: white;
+            line-height: 25px;
+            margin-left: -12px; }
+        i {
+            color: rgb(152, 152, 152);
+            margin: 0 20px;
+            font-size: 1.3rem;
+        }
+      }
+    }
 
 
 

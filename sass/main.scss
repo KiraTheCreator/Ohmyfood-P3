@@ -6,6 +6,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    width: auto;
 }
 
 p, h2, button, h3 {
@@ -14,6 +15,18 @@ p, h2, button, h3 {
 
 p {
     font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -60,8 +73,10 @@ padding: 30px 30px 55px 30px;
 }
 
 .fonctionnement-homepage {
+    margin-top: 50px;
+    margin-bottom: 50px;
     &__title {
-        margin: 20px;
+        margin: -5px 20px 20px 25px;
     }
     &__card {
       margin: 0 8%;
@@ -89,8 +104,101 @@ padding: 30px 30px 55px 30px;
             margin: 0 20px;
             font-size: 1.3rem;
         }
+        h3 {
+            margin: 0 0 0 20px;
+        }
       }
     }
 
+.restaurant {
+    background-color: $background-light;
+    &__title {
+        padding: 40px 0 0 25px;
+    }
+    .restaurant-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 25px 25px 25px;
+    }
+}
+
+.restaurant-card {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    @extend .principal-shadow;
+    margin-bottom: 25px;
+    &__img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 25px 25px 0 0;
+    }
+    &__new {
+        display: block;
+        font-weight: 600;
+        background-color: $tertiary-color;
+        color: darken($tertiary-color, 35%);
+        width: 90px;
+        padding: 8px 0;
+        text-align: center;
+        border-radius: 4px;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+    }
+}
+
+.restaurant-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 27%;
+    .card-content {
+        margin-left: 15px;
+        h3 {
+            padding-bottom: 3px;
+        }
+        p {
+            padding-top: 3px;
+        }
+    }
+}
+
+.card-icon {
+    font-size: 1.6em;
+}
+
+.principal-footer {
+    background-color: rgb(55, 51, 51);
+    padding: 25px 0 15px 20px;
+    &__list {
+        padding: 0;
+        list-style: none;
+        li {
+            color: white;
+            margin-bottom: 5px;
+            i {
+                &.fa-solid.fa-utensils {
+                    font-size: 0.9em;
+                    margin-right: 7px;
+                }
+                &.fa-solid.fa-handshake-angle {
+                    font-size: 0.7em;
+                    margin-right: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+    
+.logo-footer {
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+}
 
 

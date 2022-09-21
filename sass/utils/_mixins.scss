@@ -1,6 +1,10 @@
 .principal-shadow {
     box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
+    &:hover {
+        box-shadow: 0 5px 7px -2px rgb(174, 170, 170);
+    }
 }
+
 
 @mixin logo-font {
     font-family: 'Shrikhand', cursive;

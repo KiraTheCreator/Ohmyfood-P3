@@ -1,0 +1,96 @@
+.restaurant {
+    background-color: $background-light;
+    &__title {
+        padding: 40px 0 0 25px;
+    }
+    .restaurant-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 25px 25px 25px;
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 25px;
+            margin-right: 25px;
+            }
+    }
+}
+
+.restaurant-card {
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    @extend .principal-shadow;
+    margin-bottom: 25px;
+    transform: scale(1);
+    transition: scale 200ms;
+    &:hover {
+        transform: scale(1.02);
+        background-color: lighten($primary-color, 36%);
+    }
+    @media (min-width: 992px) {
+        margin: 0px;
+        }
+    &__img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border-radius: 25px 25px 0 0;
+    }
+    &__new {
+        display: block;
+        font-weight: 600;
+        background-color: $tertiary-color;
+        color: darken($tertiary-color, 35%);
+        width: 90px;
+        padding: 8px 0;
+        text-align: center;
+        border-radius: 4px;
+        position: absolute;
+        top: 1rem;
+        right: 0.75rem;
+    }
+}
+
+.restaurant-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 27%;
+    position: relative;
+    .card-content {
+        margin-left: 15px;
+        h3 {
+            padding-bottom: 3px;
+        }
+        p {
+            padding-top: 3px;
+        }
+    }
+}
+
+.card-icon__empty.fa-regular.fa-heart {
+    font-size: 1.6em;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.card-icon__full.fa-solid.fa-heart {
+    font-size: 1.6em;
+    background: linear-gradient(to bottom right, $primary-color, $secondary-color);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}

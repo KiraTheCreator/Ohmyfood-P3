@@ -13,8 +13,9 @@
         @include pink-button-gradiant;
         transform: scale(1);
         transition: transform 200ms;
-        &:hover {
-            transform: scale(1.02);
-        }
+            &:hover {
+                transform: scale(1.02);
+                cursor: pointer;
+            }
         }
     }

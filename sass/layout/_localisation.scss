@@ -1,0 +1,18 @@
+.localisation-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-dark;
+    padding: 15px 0;
+        &__icon {
+            color: $fourth-color;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+        &__venue {
+            color: $fourth-color;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+}

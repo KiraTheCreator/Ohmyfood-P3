@@ -1,76 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./base";
+@import "./layout/header";
+@import "./layout/localisation";
+@import "./layout/presentation";
 
-
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    width: auto;
-}
-
-p, h2, button, h3 {
-    margin: 0;
-}
-
-p {
-    font-weight: 300;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-aside {
-    margin: 0;
-    padding: 0;
-}
-
-
-.principal-header {
-    @extend .principal-shadow;
-    &__logo {
-        @include logo-font;
-    }
-}
-
-.localisation-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $background-dark;
-    padding: 13px 0 13px 0;
-        &__icon {
-            color: $fourth-color;
-            font-size: 1.2rem;
-            margin-right: 10px;
-        }
-        &__venue {
-            color: $fourth-color;
-            font-weight: 600;
-            font-size: 1.2rem;
-            margin-left: 10px;
-        }
-}
-
-.site-presentation {
-text-align: center;
-background-color: $background-light;
-padding: 30px 30px 55px 30px;
-    &__title {
-    margin-bottom: 13px;
-    font-weight: 800;
-    }
-    &__description {
-        margin-bottom: 20px;
-    }
-    &__button {
-    @include pink-button-gradiant;
-    }
-}
 
 .fonctionnement-homepage {
     margin-top: 50px;

@@ -1,0 +1,7 @@
+.principal-header {
+    @extend .principal-shadow;
+    position: relative;
+    &__logo {
+        @include logo-font;
+    }
+}

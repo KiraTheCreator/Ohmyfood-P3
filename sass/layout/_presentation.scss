@@ -1,0 +1,20 @@
+.site-presentation {
+    text-align: center;
+    background-color: $background-light;
+    padding: 30px 30px 55px 30px;
+        &__title {
+        margin-bottom: 13px;
+        font-weight: 800;
+        }
+        &__description {
+            margin-bottom: 20px;
+        }
+        &__button {
+        @include pink-button-gradiant;
+        transform: scale(1);
+        transition: transform 200ms;
+        &:hover {
+            transform: scale(1.02);
+        }
+        }
+    }

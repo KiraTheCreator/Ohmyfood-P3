@@ -70,6 +70,9 @@
         padding-left: 13px;
         margin-bottom: 14px;
         position: relative;
+        @media (min-width: 992px) {
+            margin-bottom: 20px;
+        }
         &::after {
             content: "";
             height: 3.5px;
@@ -84,6 +87,7 @@
 
 .menu__content {
     overflow: hidden;
+    
 }
 
 .menu-card {
@@ -95,6 +99,10 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 10px;
+    animation: menu-apparition 1000ms;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    @include loop-animation;
     &:hover {
         cursor: pointer;
         .menu-card__animation {

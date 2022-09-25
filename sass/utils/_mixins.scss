@@ -1,5 +1,6 @@
 .principal-shadow {
     box-shadow: 0 5px 7px -2px rgb(198, 198, 198);
+    transition: box-shadow 300ms;
     &:hover {
         box-shadow: 0 5px 7px -2px rgb(180, 174, 174);
     }
@@ -22,5 +23,12 @@
         border-radius: 30px;
         font-weight: 600;
         @extend .principal-shadow;
+        transform: scale(1);
+        transition: all 200ms;
+            &:hover {
+                transform: $basic-scale;
+                cursor: pointer;
+                opacity: 0.9;
+            }
 }
 

@@ -22,7 +22,7 @@
         border-radius: 25px;
         @extend .principal-shadow;
         transform: scale(1);
-        transition: scale 200ms;
+        transition: all 200ms;
         &:hover {
             transform: $basic-scale;
             background-color: lighten($primary-color, 36%);

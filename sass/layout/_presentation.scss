@@ -11,11 +11,5 @@
         }
         &__button {
         @include pink-button-gradiant;
-        transform: scale(1);
-        transition: transform 200ms;
-            &:hover {
-                transform: $basic-scale;
-                cursor: pointer;
-            }
         }
     }

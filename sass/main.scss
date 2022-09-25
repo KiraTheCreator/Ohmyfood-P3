@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/animation";
 @import "./base";
 @import "./layout/header";
 @import "./layout/localisation";
@@ -9,7 +10,7 @@
 @import "./layout/restaurants";
 @import "./layout/footer";
 @import "./pages/pages";
-@import "./components/heart-homepage";
+
 
 
 

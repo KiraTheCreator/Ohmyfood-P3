@@ -1,0 +1,16 @@
+@mixin arrow {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 1.75em;
+    font-weight: 900; 
+    content: "\f060";
+    color: $fourth-color;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    cursor: pointer;
+  }

@@ -1,3 +1,5 @@
+@import "../components/heart-homepage";
+
 .restaurant {
     background-color: $background-light;
     &__title {
@@ -28,7 +30,7 @@
     transform: scale(1);
     transition: scale 200ms;
     &:hover {
-        transform: scale(1.02);
+        transform: $basic-scale;
         background-color: lighten($primary-color, 36%);
     }
     @media (min-width: 992px) {
@@ -61,6 +63,7 @@
     justify-content: space-between;
     height: 27%;
     position: relative;
+    @include heart;
     .card-content {
         margin-left: 15px;
         h3 {
@@ -72,25 +75,3 @@
     }
 }
 
-.card-icon__empty.fa-regular.fa-heart {
-    font-size: 1.6em;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.card-icon__full.fa-solid.fa-heart {
-    font-size: 1.6em;
-    background: linear-gradient(to bottom right, $primary-color, $secondary-color);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    opacity: 0;
-    transition: all 300ms ease-in-out;
-    &:hover {
-        opacity: 1;
-    }
-}

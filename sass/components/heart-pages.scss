@@ -1,0 +1,24 @@
+@mixin heart-page {
+    .card-icon__empty.fa-regular.fa-heart {
+        font-size: 1.6em;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+    }
+    
+    .card-icon__full.fa-solid.fa-heart {
+        font-size: 1.6em;
+        background: linear-gradient(to bottom right, $primary-color, $secondary-color);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        top: 0rem;
+        right: 0rem;
+        opacity: 0;
+        transition: all 300ms ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

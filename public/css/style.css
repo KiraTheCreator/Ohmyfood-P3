@@ -88,7 +88,7 @@
   opacity: 0.95;
   animation: loader-animation 250ms ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 3500ms;
+  animation-delay: 3000ms;
 }
 .loader-spinner i {
   position: relative;
@@ -337,6 +337,9 @@ h5 {
   opacity: 1;
   cursor: pointer;
 }
+.restaurant-card-footer .card-icon__full.fa-solid.fa-heart:hover .card-icon__empty.fa-regular.fa-heart {
+  opacity: 0;
+}
 .restaurant-card-footer .card-content {
   margin-left: 15px;
 }
@@ -441,6 +444,9 @@ h5 {
 .restaurant-header__heart .card-icon__full.fa-solid.fa-heart:hover {
   opacity: 1;
   cursor: pointer;
+}
+.restaurant-header__heart .card-icon__full.fa-solid.fa-heart:hover .card-icon__empty.fa-regular.fa-heart {
+  opacity: 0;
 }
 
 .restaurant-content {

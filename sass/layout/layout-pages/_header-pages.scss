@@ -1,0 +1,15 @@
+.pages .principal-header {
+    &::before {
+        @include arrow;
+    }
+}
+
+.header-pages {
+    &__image {
+    display: block;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    
+    }
+}

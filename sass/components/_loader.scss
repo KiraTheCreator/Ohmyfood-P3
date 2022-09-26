@@ -1,7 +1,5 @@
 @import "../utils/animation";
 
-
-
 .loader-spinner {
     position: fixed;
     background-color: white;
@@ -11,7 +9,7 @@
     opacity: 0.95;
     animation: loader-animation 250ms ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 3500ms;
+    animation-delay: 3000ms;
     i {
         position: relative;
         top: 50%;

@@ -20,6 +20,9 @@
         &:hover {
             opacity: 1;
             cursor: pointer;
+            .card-icon__empty.fa-regular.fa-heart {
+                opacity: 0;
+            }
         }
     }
 }

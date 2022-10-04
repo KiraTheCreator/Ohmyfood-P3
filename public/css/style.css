@@ -37,10 +37,10 @@
 }
 @keyframes loader-item {
   0% {
-    rotate: 0turn;
+    transform: rotate(0turn);
   }
   100% {
-    rotate: 1turn;
+    transform: rotate(1turn);
   }
 }
 @keyframes check-turn {
@@ -73,10 +73,10 @@
 }
 @keyframes loader-item {
   0% {
-    rotate: 0turn;
+    transform: rotate(0turn);
   }
   100% {
-    rotate: 1turn;
+    transform: rotate(1turn);
   }
 }
 .loader-spinner {
@@ -91,6 +91,7 @@
   animation-delay: 3000ms;
 }
 .loader-spinner i {
+  margin-left: -48px;
   position: relative;
   top: 50%;
   left: 50%;

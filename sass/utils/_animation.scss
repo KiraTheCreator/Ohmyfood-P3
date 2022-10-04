@@ -31,9 +31,9 @@
 
 @keyframes loader-item {
     0% {
-        rotate: 0turn;
+        transform: rotate(0turn);
     }
     100% {
-        rotate: 1turn;
+        transform: rotate(1turn);
     }
 }

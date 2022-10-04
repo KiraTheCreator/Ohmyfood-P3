@@ -361,20 +361,24 @@ h5 {
   list-style: none;
 }
 .principal-footer__list li {
-  color: white;
   margin-bottom: 5px;
 }
 .principal-footer__list li:hover {
   text-decoration: underline;
 }
+.principal-footer__list li a {
+  color: white;
+}
 .principal-footer__list li i.fa-solid.fa-utensils {
   font-size: 0.9em;
   margin-right: 7px;
+  color: white;
 }
 .principal-footer__list li i.fa-solid.fa-handshake-angle {
   font-size: 0.7em;
   margin-right: 5px;
   padding-bottom: 5px;
+  color: white;
 }
 
 .logo-footer {
